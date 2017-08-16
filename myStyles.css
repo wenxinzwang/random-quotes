@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	position: relative;
+	font-family: arial;
+	color: grey;
+	vertical-align: baseline;
+}
+
+#container {
+	background-color: white;
+	max-width: 600px;
+	margin: 10% auto auto auto;
+	padding: 40px;
+	border-radius: 5px;
+}
+
+#quoteText {	
+	font-size: 30px;
+	text-align: center;
+	display: inline;
+}
+
+#quoteAuthor {
+	font-size: 18px;
+	text-align: right;
+	margin: 10px 0 20px;
+}
+#quoteAuthor::before {
+	content:"\2014";
+}
+
+button {
+	background-color: grey;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	height: 35px;
+	width: 35px;
+}
+button:hover {
+	opacity: 0.8;
+	cursor:pointer;
+}
+
+#new{
+	float: right;
+	font-size: 15px;
+	padding: 0 10px;
+	width: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	font-size: 15px;
+}
+
+footer a {
+	text-decoration: none;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active, button a:link, button a:visited, button a:hover, button a:active{
+	color: white;
+}

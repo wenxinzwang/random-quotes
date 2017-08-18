@@ -1,4 +1,4 @@
-var content = '', author = '';
+//var content = '', author = '';
 
 function newQuote() {
     // create script with passed in URL
@@ -23,6 +23,16 @@ function newQuote() {
 function processQuote(data) {
 	var content = data[0].content.replace(/ *<\/*p>/g, "");
 	var author = data[0].title;
+	var hue = Math.floor(Math.random() * 360); 
+	var color = "hsl(" + hue + ", 50%, 50%)";
+	var buttons, i;
+	
+	document.body.style.backgroundColor = color;
+	document.body.style.color = color;
+	buttons = document.getElementsByTagName("button");
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].style.backgroundColor = color;
+    } 
 	
     document.getElementById("quoteText").innerHTML = content;
     document.getElementById("quoteAuthor").innerHTML = author;

@@ -12,7 +12,8 @@ body {
 
 #container {
 	background-color: white;
-	max-width: 600px;
+	width: 80%;
+	
 	margin: 10% auto auto auto;
 	padding: 40px;
 	border-radius: 5px;
@@ -71,4 +72,10 @@ footer a {
 }
 footer a:link, footer a:visited, footer a:hover, footer a:active, button a:link, button a:visited, button a:hover, button a:active{
 	color: white;
+}
+
+@media only screen and (min-width: 768px) { 
+	#container {
+		width: 600px;
+	}
 }
